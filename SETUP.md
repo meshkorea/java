@@ -13,13 +13,13 @@
  - Repository URL: `https://nexus.mm.meshkorea.net/repository/maven-central`
  - 인증필요
  -- ** LDAP (Jira/Confluence 계정) 연동이 현재 깨짐
- -- 임시 계정 `meshdev`/`20130118`
+ -- 임시 계정 `meshdev`/`20130118` -- 추후 이 계정은 삭제될것입니다.
  
 Project 별로 gradle 설정을 추가 하거나 globally 설정 할 수 있다. `~/.gradle/init.gradle` 편집:
  ```
  allprojects {
     repositories {
-        mavenLocal()
+
         maven {
             url "https://nexus.mm.meshkorea.net/repository/maven-central"
             credentials {
